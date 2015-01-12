@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue Jan 06 18:19:32 2015
+# Process ID: 4224
+# Log file: E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/communication_system_i2c.sim/sim_1/behav/webtalk.log
+# Journal file: E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/communication_system_i2c.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/communication_system_i2c.sim/sim_1/behav/xsim.dir/tb_module_RW_behav/webtalk/xsim_webtalk.tcl -notrace
