@@ -34,8 +34,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity module_RW is
   Port ( 
          DATA_IN : in STD_LOGIC_VECTOR (7 downto 0);
-         ACK_RECEIVED : in STD_LOGIC;
-         ACK_SENT : in STD_LOGIC;
+         LOAD_NEXT : in STD_LOGIC;
+         OCTET_READY : in STD_LOGIC;
          CLK : in STD_LOGIC;
                  
          ADDR : out STD_LOGIC_VECTOR (6 downto 0);
@@ -46,7 +46,9 @@ entity module_RW is
          WRITE : out STD_LOGIC; -- "1" start write
          READ : out STD_LOGIC; -- "1" start read
          
-         DATA_COMPUTED : out STD_LOGIC_VECTOR (2 downto 0));
+         X_COMPUTED : out STD_LOGIC_VECTOR (15 downto 0);
+         Y_COMPUTED : out STD_LOGIC_VECTOR (15 downto 0);
+         Z_COMPUTED : out STD_LOGIC_VECTOR (15 downto 0));
 end module_RW;
 
 architecture Behavioral of module_RW is
@@ -60,7 +62,6 @@ TYPE DATA_CTL_MODE is (DATA_CTL_REG_ADDR, VAL);
 TYPE DATA_MODE is (DATA_REG_ADDR, DATA_REC);
 TYPE XYZ_MODE is (X0, X1, Y0, Y1, Z0, Z1);
 
-signal internal_data_computed : STD_LOGIC_VECTOR (2 downto 0) := "000";
 signal currentMode : MODE;
 signal pw : PW_MODE;
 signal data_ctl : DATA_CTL_MODE;
@@ -84,7 +85,7 @@ NUM_OUT <= 2;
 WRITE <= internalW;
 READ <= internalR;
 
-Transmit : process (CLK, ACK_RECEIVED, ACK_SENT) is 
+Transmit : process (CLK,LOAD_NEXT, OCTET_READY) is 
 begin
 if CLK'EVENT and CLK = '1' then
   case currentMode is
@@ -93,7 +94,7 @@ if CLK'EVENT and CLK = '1' then
     case pw is
      when PW_REG_ADDR =>
       DATA_OUT <= "00101101"; -- power control register address 0x2D
-      if ACK_RECEIVED = '1' then
+      if LOAD_NEXT = '1' then
        pw <= MESURE;
       end if;
      when MESURE =>
@@ -106,7 +107,7 @@ if CLK'EVENT and CLK = '1' then
     case data_ctl is
      when DATA_CTL_REG_ADDR =>
       DATA_OUT <= "00110001"; -- data format control register address 0x31
-      if ACK_RECEIVED = '1' then
+      if LOAD_NEXT = '1' then
        data_ctl <= VAL;
       end if;
      when VAL =>
@@ -124,13 +125,13 @@ if CLK'EVENT and CLK = '1' then
           internalW <= '1';
           internalR <= '0';
           DATA_OUT <= "00110010"; -- 0x32
-          if ACK_RECEIVED = '1' then
+          if LOAD_NEXT = '1' then
            dataMode <= DATA_REC;
           end if;
          when DATA_REC =>
           internalW <= '0';
           internalR <= '1';
-          if ACK_SENT = '1' then
+          if OCTET_READY = '1' then
            internalX0 <= DATA_IN;
            xyz <= X1;
            dataMode <= DATA_REG_ADDR;
@@ -142,14 +143,15 @@ if CLK'EVENT and CLK = '1' then
          internalW <= '1';
          internalR <= '0';
          DATA_OUT <= "00110011"; -- 0x33
-         if ACK_RECEIVED = '1' then
+         if LOAD_NEXT = '1' then
           dataMode <= DATA_REC;
          end if;
         when DATA_REC =>
          internalW <= '0';
          internalR <= '1';
-         if ACK_SENT = '1' then
+         if OCTET_READY = '1' then
           internalX1 <= DATA_IN;
+          X_COMPUTED <= internalX1 & internalX0;
           xyz <= Y0;
           dataMode <= DATA_REG_ADDR;
          end if;
@@ -160,13 +162,13 @@ if CLK'EVENT and CLK = '1' then
          internalW <= '1';
          internalR <= '0';
          DATA_OUT <= "00110100"; -- 0x34
-         if ACK_RECEIVED = '1' then
+         if LOAD_NEXT = '1' then
           dataMode <= DATA_REC;
          end if;
         when DATA_REC =>
          internalW <= '0';
          internalR <= '1';
-         if ACK_SENT = '1' then
+         if OCTET_READY = '1' then
           internalY0 <= DATA_IN;
           xyz <= Y1;
           dataMode <= DATA_REG_ADDR;
@@ -178,14 +180,15 @@ if CLK'EVENT and CLK = '1' then
          internalW <= '1';
          internalR <= '0';
          DATA_OUT <= "00110101"; -- 0x35
-         if ACK_RECEIVED = '1' then
+         if LOAD_NEXT = '1' then
           dataMode <= DATA_REC;
          end if;
         when DATA_REC =>
          internalW <= '0';
          internalR <= '1';
-         if ACK_SENT = '1' then
+         if OCTET_READY = '1' then
           internalY1 <= DATA_IN;
+          Y_COMPUTED <= internalY1 & internalY0;
           xyz <= Z0;
           dataMode <= DATA_REG_ADDR;
          end if;
@@ -196,13 +199,13 @@ if CLK'EVENT and CLK = '1' then
          internalW <= '1';
          internalR <= '0';
          DATA_OUT <= "00110110"; -- 0x36
-         if ACK_RECEIVED = '1' then
+         if LOAD_NEXT = '1' then
           dataMode <= DATA_REC;
          end if;
         when DATA_REC =>
          internalW <= '0';
          internalR <= '1';
-         if ACK_SENT = '1' then
+         if OCTET_READY = '1' then
           internalZ0 <= DATA_IN;
           xyz <= Z1;
           dataMode <= DATA_REG_ADDR;
@@ -214,14 +217,15 @@ if CLK'EVENT and CLK = '1' then
          internalW <= '1';
          internalR <= '0';
          DATA_OUT <= "00110111"; -- 0x37
-         if ACK_RECEIVED = '1' then
+         if LOAD_NEXT = '1' then
           dataMode <= DATA_REC;
          end if;
         when DATA_REC =>
          internalW <= '0';
          internalR <= '1';
-         if ACK_SENT = '1' then
+         if OCTET_READY = '1' then
           internalZ1 <= DATA_IN;
+          Z_COMPUTED <= internalZ1 & internalZ0;
           xyz <= X0;
           dataMode <= DATA_REG_ADDR;
          end if;
