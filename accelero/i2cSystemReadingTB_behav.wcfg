@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="i2cSystemReadingTB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="i2cSystemReadingTB" />
+            <top_module name="state_type_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="20" />
+   <wvobject db_ref_id="1" fp_name="/i2cSystemReadingTB/uut/DataReceived" type="array">
+      <obj_property name="ElementShortName">DataReceived[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DataReceived[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/i2cSystemReadingTB/uut/Scl" type="logic">
+      <obj_property name="ElementShortName">Scl</obj_property>
+      <obj_property name="ObjectShortName">Scl</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/i2cSystemReadingTB/uut/Sda" type="logic">
+      <obj_property name="ElementShortName">Sda</obj_property>
+      <obj_property name="ObjectShortName">Sda</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/i2cSystemReadingTB/uut/Receiver/NbReceived" type="other">
+      <obj_property name="ElementShortName">NbReceived</obj_property>
+      <obj_property name="ObjectShortName">NbReceived</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/i2cSystemReadingTB/uut/Receiver/Clk" type="logic">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/i2cSystemReadingTB/uut/Receiver/BdClk" type="logic">
+      <obj_property name="ElementShortName">BdClk</obj_property>
+      <obj_property name="ObjectShortName">BdClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/i2cSystemReadingTB/uut/Receiver/HalftimeBdClk" type="logic">
+      <obj_property name="ElementShortName">HalftimeBdClk</obj_property>
+      <obj_property name="ObjectShortName">HalftimeBdClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/i2cSystemReadingTB/uut/Receiver/NbToReceive" type="other">
+      <obj_property name="ElementShortName">NbToReceive</obj_property>
+      <obj_property name="ObjectShortName">NbToReceive</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/i2cSystemReadingTB/uut/Receiver/Data" type="array">
+      <obj_property name="ElementShortName">Data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Data[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/i2cSystemReadingTB/uut/Receiver/Receive" type="logic">
+      <obj_property name="ElementShortName">Receive</obj_property>
+      <obj_property name="ObjectShortName">Receive</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/i2cSystemReadingTB/uut/Receiver/SCL" type="logic">
+      <obj_property name="ElementShortName">SCL</obj_property>
+      <obj_property name="ObjectShortName">SCL</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/i2cSystemReadingTB/uut/Receiver/SDA" type="logic">
+      <obj_property name="ElementShortName">SDA</obj_property>
+      <obj_property name="ObjectShortName">SDA</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/i2cSystemReadingTB/uut/Receiver/NbReceived" type="other">
+      <obj_property name="ElementShortName">NbReceived</obj_property>
+      <obj_property name="ObjectShortName">NbReceived</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/i2cSystemReadingTB/uut/Receiver/BdClkEn" type="logic">
+      <obj_property name="ElementShortName">BdClkEn</obj_property>
+      <obj_property name="ObjectShortName">BdClkEn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/i2cSystemReadingTB/uut/Receiver/OctetReceived" type="logic">
+      <obj_property name="ElementShortName">OctetReceived</obj_property>
+      <obj_property name="ObjectShortName">OctetReceived</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/i2cSystemReadingTB/uut/Receiver/DoneReceiving" type="logic">
+      <obj_property name="ElementShortName">DoneReceiving</obj_property>
+      <obj_property name="ObjectShortName">DoneReceiving</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/i2cSystemReadingTB/uut/Receiver/RW" type="logic">
+      <obj_property name="ElementShortName">RW</obj_property>
+      <obj_property name="ObjectShortName">RW</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/i2cSystemReadingTB/uut/Receiver/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/i2cSystemReadingTB/uut/Receiver/NbRd" type="other">
+      <obj_property name="ElementShortName">NbRd</obj_property>
+      <obj_property name="ObjectShortName">NbRd</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/i2cSystemReadingTB/uut/Receiver/InternalData" type="array">
+      <obj_property name="ElementShortName">InternalData[7:0]</obj_property>
+      <obj_property name="ObjectShortName">InternalData[7:0]</obj_property>
+   </wvobject>
+</wave_config>

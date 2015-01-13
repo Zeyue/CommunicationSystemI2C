@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="trial1_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="state_type_pkg" />
+            <top_module name="trial1_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="34" />
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/sda" type="logic">
+      <obj_property name="ElementShortName">sda</obj_property>
+      <obj_property name="ObjectShortName">sda</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/scl" type="logic">
+      <obj_property name="ElementShortName">scl</obj_property>
+      <obj_property name="ObjectShortName">scl</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/x" type="array">
+      <obj_property name="ElementShortName">x[7:0]</obj_property>
+      <obj_property name="ObjectShortName">x[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/Clk_period" type="other">
+      <obj_property name="ElementShortName">Clk_period</obj_property>
+      <obj_property name="ObjectShortName">Clk_period</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/DATA_IN" type="array">
+      <obj_property name="ElementShortName">DATA_IN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_IN[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/LOAD_NEXT" type="logic">
+      <obj_property name="ElementShortName">LOAD_NEXT</obj_property>
+      <obj_property name="ObjectShortName">LOAD_NEXT</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/OCTET_READY" type="logic">
+      <obj_property name="ElementShortName">OCTET_READY</obj_property>
+      <obj_property name="ObjectShortName">OCTET_READY</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/ADDR" type="array">
+      <obj_property name="ElementShortName">ADDR[6:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDR[6:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/NUM_IN" type="other">
+      <obj_property name="ElementShortName">NUM_IN</obj_property>
+      <obj_property name="ObjectShortName">NUM_IN</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/NUM_OUT" type="other">
+      <obj_property name="ElementShortName">NUM_OUT</obj_property>
+      <obj_property name="ObjectShortName">NUM_OUT</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/DATA_OUT" type="array">
+      <obj_property name="ElementShortName">DATA_OUT[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_OUT[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/WRITE" type="logic">
+      <obj_property name="ElementShortName">WRITE</obj_property>
+      <obj_property name="ObjectShortName">WRITE</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/READ" type="logic">
+      <obj_property name="ElementShortName">READ</obj_property>
+      <obj_property name="ObjectShortName">READ</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/X_COMPUTED" type="array">
+      <obj_property name="ElementShortName">X_COMPUTED[15:0]</obj_property>
+      <obj_property name="ObjectShortName">X_COMPUTED[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/Y_COMPUTED" type="array">
+      <obj_property name="ElementShortName">Y_COMPUTED[15:0]</obj_property>
+      <obj_property name="ObjectShortName">Y_COMPUTED[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/Z_COMPUTED" type="array">
+      <obj_property name="ElementShortName">Z_COMPUTED[15:0]</obj_property>
+      <obj_property name="ObjectShortName">Z_COMPUTED[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/currentMode" type="other">
+      <obj_property name="ElementShortName">currentMode</obj_property>
+      <obj_property name="ObjectShortName">currentMode</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/pw" type="other">
+      <obj_property name="ElementShortName">pw</obj_property>
+      <obj_property name="ObjectShortName">pw</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/data_ctl" type="other">
+      <obj_property name="ElementShortName">data_ctl</obj_property>
+      <obj_property name="ObjectShortName">data_ctl</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/dataMode" type="other">
+      <obj_property name="ElementShortName">dataMode</obj_property>
+      <obj_property name="ObjectShortName">dataMode</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/xyz" type="other">
+      <obj_property name="ElementShortName">xyz</obj_property>
+      <obj_property name="ObjectShortName">xyz</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/internalX0" type="array">
+      <obj_property name="ElementShortName">internalX0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">internalX0[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/internalX1" type="array">
+      <obj_property name="ElementShortName">internalX1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">internalX1[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/internalY0" type="array">
+      <obj_property name="ElementShortName">internalY0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">internalY0[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/internalY1" type="array">
+      <obj_property name="ElementShortName">internalY1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">internalY1[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/internalZ0" type="array">
+      <obj_property name="ElementShortName">internalZ0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">internalZ0[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/internalZ1" type="array">
+      <obj_property name="ElementShortName">internalZ1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">internalZ1[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/internalR" type="logic">
+      <obj_property name="ElementShortName">internalR</obj_property>
+      <obj_property name="ObjectShortName">internalR</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/internalW" type="logic">
+      <obj_property name="ElementShortName">internalW</obj_property>
+      <obj_property name="ObjectShortName">internalW</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/SLAVE_ADDR" type="array">
+      <obj_property name="ElementShortName">SLAVE_ADDR[6:0]</obj_property>
+      <obj_property name="ObjectShortName">SLAVE_ADDR[6:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/W" type="logic">
+      <obj_property name="ElementShortName">W</obj_property>
+      <obj_property name="ObjectShortName">W</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/rw/R" type="logic">
+      <obj_property name="ElementShortName">R</obj_property>
+      <obj_property name="ObjectShortName">R</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.2
+# SW Build 932637 on Wed Jun 11 13:24:38 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Tue Jan 13 12:25:52 2015
+# Process ID: 512
+# Log file: C:/Documents and Settings/CONCOURS/accelero/accelero.runs/impl_1/trial1.vdi
+# Journal file: C:/Documents and Settings/CONCOURS/accelero/accelero.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source trial1.tcl -notrace
