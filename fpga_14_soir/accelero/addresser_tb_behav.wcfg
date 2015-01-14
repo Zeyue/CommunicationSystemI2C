@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="addresser_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="addresser_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="22" />
+   <wvobject db_ref_id="1" fp_name="/addresser_tb/Clk" type="logic">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/addresser_tb/BdClk" type="logic">
+      <obj_property name="ElementShortName">BdClk</obj_property>
+      <obj_property name="ObjectShortName">BdClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/addresser_tb/SlaveAddress" type="array">
+      <obj_property name="ElementShortName">SlaveAddress[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SlaveAddress[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/addresser_tb/SCL" type="logic">
+      <obj_property name="ElementShortName">SCL</obj_property>
+      <obj_property name="ObjectShortName">SCL</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/addresser_tb/SDA" type="logic">
+      <obj_property name="ElementShortName">SDA</obj_property>
+      <obj_property name="ObjectShortName">SDA</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/addresser_tb/BdClkEn" type="logic">
+      <obj_property name="ElementShortName">BdClkEn</obj_property>
+      <obj_property name="ObjectShortName">BdClkEn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/addresser_tb/SendAddress" type="logic">
+      <obj_property name="ElementShortName">SendAddress</obj_property>
+      <obj_property name="ObjectShortName">SendAddress</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/addresser_tb/AddressSent" type="logic">
+      <obj_property name="ElementShortName">AddressSent</obj_property>
+      <obj_property name="ObjectShortName">AddressSent</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/addresser_tb/counter" type="other">
+      <obj_property name="ElementShortName">counter</obj_property>
+      <obj_property name="ObjectShortName">counter</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/addresser_tb/Clk_period" type="other">
+      <obj_property name="ElementShortName">Clk_period</obj_property>
+      <obj_property name="ObjectShortName">Clk_period</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/addresser_tb/BdClk_period" type="other">
+      <obj_property name="ElementShortName">BdClk_period</obj_property>
+      <obj_property name="ObjectShortName">BdClk_period</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/addresser_tb/baudrate" type="other">
+      <obj_property name="ElementShortName">baudrate</obj_property>
+      <obj_property name="ObjectShortName">baudrate</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/addresser_tb/mainfreq" type="other">
+      <obj_property name="ElementShortName">mainfreq</obj_property>
+      <obj_property name="ObjectShortName">mainfreq</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/addresser_tb/uut/Clk" type="logic">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/addresser_tb/uut/BdClk" type="logic">
+      <obj_property name="ElementShortName">BdClk</obj_property>
+      <obj_property name="ObjectShortName">BdClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/addresser_tb/uut/SlaveAddress" type="array">
+      <obj_property name="ElementShortName">SlaveAddress[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SlaveAddress[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/addresser_tb/uut/SCL" type="logic">
+      <obj_property name="ElementShortName">SCL</obj_property>
+      <obj_property name="ObjectShortName">SCL</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/addresser_tb/uut/SDA" type="logic">
+      <obj_property name="ElementShortName">SDA</obj_property>
+      <obj_property name="ObjectShortName">SDA</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/addresser_tb/uut/BdClkEn" type="logic">
+      <obj_property name="ElementShortName">BdClkEn</obj_property>
+      <obj_property name="ObjectShortName">BdClkEn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/addresser_tb/uut/SendAddress" type="logic">
+      <obj_property name="ElementShortName">SendAddress</obj_property>
+      <obj_property name="ObjectShortName">SendAddress</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/addresser_tb/uut/AddressSent" type="logic">
+      <obj_property name="ElementShortName">AddressSent</obj_property>
+      <obj_property name="ObjectShortName">AddressSent</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/addresser_tb/uut/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+</wave_config>

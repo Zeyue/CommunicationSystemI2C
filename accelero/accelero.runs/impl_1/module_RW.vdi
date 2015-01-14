@@ -1,0 +1,444 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue Jan 13 21:14:48 2015
+# Process ID: 3008
+# Log file: E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.runs/impl_1/module_RW.vdi
+# Journal file: E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source module_RW.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2014.4
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/zynq/IOStandards.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+Parsing XDC File [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc]
+WARNING: [Vivado 12-584] No ports matched 'Clk'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Clk'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[7]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[6]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[5]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[4]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[3]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[2]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[1]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[0]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Scl'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Sda'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[0]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[1]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[2]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[3]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[4]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[5]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[6]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[7]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Scl'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Sda'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+Finished Parsing XDC File [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 467.164 ; gain = 276.191
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-86] Your Implementation license expires in 0 day(s)
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.354 . Memory (MB): peak = 467.969 ; gain = 0.805
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: ff2d8530
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 948.566 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant Propagation | Checksum: 309836f4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 948.566 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 3 Sweep | Checksum: 309836f4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 948.566 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 309836f4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 948.566 ; gain = 0.000
+Implement Debug Cores | Checksum: ff2d8530
+Logic Optimization | Checksum: ff2d8530
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 3.13 ns.
+Ending Power Optimization Task | Checksum: 309836f4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.791 . Memory (MB): peak = 948.566 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+24 Infos, 22 Warnings, 22 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:54 . Memory (MB): peak = 948.566 ; gain = 481.402
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.runs/impl_1/module_RW_drc_opted.rpt.
+report_drc: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 948.566 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-86] Your Implementation license expires in 0 day(s)
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Runtime Estimator
+Phase 1 Placer Runtime Estimator | Checksum: 2d07479f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 948.566 ; gain = 0.000
+
+Phase 2 Placer Initialization
+
+Phase 2.1 Placer Initialization Core
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 948.566 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 948.566 ; gain = 0.000
+
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 2.1.1.1 Pre-Place Cells
+Phase 2.1.1.1 Pre-Place Cells | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.255 . Memory (MB): peak = 948.566 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2.1.1.2 IO & Clk Clean Up
+Phase 2.1.1.2 IO & Clk Clean Up | Checksum: 00000000
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 969.672 ; gain = 21.105
+
+Phase 2.1.1.3 Implementation Feasibility check On IDelay
+Phase 2.1.1.3 Implementation Feasibility check On IDelay | Checksum: 00000000
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 969.672 ; gain = 21.105
+
+Phase 2.1.1.4 Commit IO Placement
+Phase 2.1.1.4 Commit IO Placement | Checksum: e1eee7a2
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 969.672 ; gain = 21.105
+Phase 2.1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 164e198c5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 969.672 ; gain = 21.105
+
+Phase 2.1.2 Build Placer Netlist Model
+
+Phase 2.1.2.1 Place Init Design
+Phase 2.1.2.1 Place Init Design | Checksum: 25acc6ba8
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 969.672 ; gain = 21.105
+Phase 2.1.2 Build Placer Netlist Model | Checksum: 25acc6ba8
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 969.672 ; gain = 21.105
+
+Phase 2.1.3 Constrain Clocks/Macros
+
+Phase 2.1.3.1 Constrain Global/Regional Clocks
+Phase 2.1.3.1 Constrain Global/Regional Clocks | Checksum: 25acc6ba8
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 969.672 ; gain = 21.105
+Phase 2.1.3 Constrain Clocks/Macros | Checksum: 25acc6ba8
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 969.672 ; gain = 21.105
+Phase 2.1 Placer Initialization Core | Checksum: 25acc6ba8
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 969.672 ; gain = 21.105
+Phase 2 Placer Initialization | Checksum: 25acc6ba8
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 969.672 ; gain = 21.105
+
+Phase 3 Global Placement
+Phase 3 Global Placement | Checksum: 1c4dbfe08
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 969.672 ; gain = 21.105
+
+Phase 4 Detail Placement
+
+Phase 4.1 Commit Multi Column Macros
+Phase 4.1 Commit Multi Column Macros | Checksum: 1c4dbfe08
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 969.672 ; gain = 21.105
+
+Phase 4.2 Commit Most Macros & LUTRAMs
+Phase 4.2 Commit Most Macros & LUTRAMs | Checksum: 1d170e09c
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 969.672 ; gain = 21.105
+
+Phase 4.3 Area Swap Optimization
+Phase 4.3 Area Swap Optimization | Checksum: 1d321cc4a
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 969.672 ; gain = 21.105
+
+Phase 4.4 Small Shape Detail Placement
+
+Phase 4.4.1 Commit Small Macros & Core Logic
+
+Phase 4.4.1.1 Commit Slice Clusters
+Phase 4.4.1.1 Commit Slice Clusters | Checksum: 172aea02a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 969.672 ; gain = 21.105
+Phase 4.4.1 Commit Small Macros & Core Logic | Checksum: 172aea02a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 969.672 ; gain = 21.105
+
+Phase 4.4.2 Clock Restriction Legalization for Leaf Columns
+Phase 4.4.2 Clock Restriction Legalization for Leaf Columns | Checksum: 172aea02a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 969.672 ; gain = 21.105
+
+Phase 4.4.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 4.4.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 172aea02a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 969.672 ; gain = 21.105
+Phase 4.4 Small Shape Detail Placement | Checksum: 172aea02a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 969.672 ; gain = 21.105
+
+Phase 4.5 Re-assign LUT pins
+Phase 4.5 Re-assign LUT pins | Checksum: 172aea02a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 969.672 ; gain = 21.105
+Phase 4 Detail Placement | Checksum: 172aea02a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 969.672 ; gain = 21.105
+
+Phase 5 Post Placement Optimization and Clean-Up
+
+Phase 5.1 PCOPT Shape updates
+Phase 5.1 PCOPT Shape updates | Checksum: 172aea02a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 969.672 ; gain = 21.105
+
+Phase 5.2 Post Commit Optimization
+Phase 5.2 Post Commit Optimization | Checksum: 172aea02a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 969.672 ; gain = 21.105
+
+Phase 5.3 Sweep Clock Roots: Post-Placement
+Phase 5.3 Sweep Clock Roots: Post-Placement | Checksum: 172aea02a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 969.672 ; gain = 21.105
+
+Phase 5.4 Post Placement Cleanup
+Phase 5.4 Post Placement Cleanup | Checksum: 172aea02a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 969.672 ; gain = 21.105
+
+Phase 5.5 Placer Reporting
+Phase 5.5 Placer Reporting | Checksum: 172aea02a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 969.672 ; gain = 21.105
+
+Phase 5.6 Final Placement Cleanup
+Phase 5.6 Final Placement Cleanup | Checksum: 131f73ae5
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 969.672 ; gain = 21.105
+Phase 5 Post Placement Optimization and Clean-Up | Checksum: 131f73ae5
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 969.672 ; gain = 21.105
+Ending Placer Task | Checksum: a6e4d3ae
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 969.672 ; gain = 21.105
+INFO: [Common 17-83] Releasing license: Implementation
+37 Infos, 22 Warnings, 22 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 969.672 ; gain = 21.105
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.361 . Memory (MB): peak = 969.672 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.263 . Memory (MB): peak = 969.672 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.128 . Memory (MB): peak = 969.672 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 969.672 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-86] Your Implementation license expires in 0 day(s)
+Running DRC as a precondition to command route_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: bb3db5e2
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:01:33 . Memory (MB): peak = 1064.332 ; gain = 94.660
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Pre Route Cleanup
+Phase 2.1 Pre Route Cleanup | Checksum: bb3db5e2
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:01:33 . Memory (MB): peak = 1069.297 ; gain = 99.625
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: 1dd8c6be
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:01:34 . Memory (MB): peak = 1081.723 ; gain = 112.051
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: f4af976c
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:01:34 . Memory (MB): peak = 1081.723 ; gain = 112.051
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: 1461d5565
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:01:34 . Memory (MB): peak = 1081.723 ; gain = 112.051
+Phase 4 Rip-up And Reroute | Checksum: 1461d5565
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:01:34 . Memory (MB): peak = 1081.723 ; gain = 112.051
+
+Phase 5 Post Hold Fix
+Phase 5 Post Hold Fix | Checksum: 1461d5565
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:01:34 . Memory (MB): peak = 1081.723 ; gain = 112.051
+
+Phase 6 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0865176 %
+  Global Horizontal Routing Utilization  = 0.138776 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 27.9279%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 27.027%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 17.6471%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 17.6471%, No Congested Regions.
+Phase 6 Route finalize | Checksum: 1461d5565
+
+Time (s): cpu = 00:01:43 ; elapsed = 00:01:34 . Memory (MB): peak = 1081.723 ; gain = 112.051
+
+Phase 7 Verifying routed nets
+
+ Verification completed successfully
+Phase 7 Verifying routed nets | Checksum: 1461d5565
+
+Time (s): cpu = 00:01:43 ; elapsed = 00:01:34 . Memory (MB): peak = 1081.723 ; gain = 112.051
+
+Phase 8 Depositing Routes
+Phase 8 Depositing Routes | Checksum: e09b312c
+
+Time (s): cpu = 00:01:43 ; elapsed = 00:01:34 . Memory (MB): peak = 1081.723 ; gain = 112.051
+INFO: [Route 35-16] Router Completed Successfully
+
+Routing Is Done.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:01:34 . Memory (MB): peak = 1081.723 ; gain = 112.051
+INFO: [Common 17-83] Releasing license: Implementation
+46 Infos, 22 Warnings, 22 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:46 ; elapsed = 00:01:37 . Memory (MB): peak = 1081.723 ; gain = 112.051
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.271 . Memory (MB): peak = 1081.723 ; gain = 0.000
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.runs/impl_1/module_RW_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 13 21:18:13 2015...

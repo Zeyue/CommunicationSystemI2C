@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue Jan 13 21:14:48 2015
+# Process ID: 3008
+# Log file: E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.runs/impl_1/module_RW.vdi
+# Journal file: E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source module_RW.tcl -notrace

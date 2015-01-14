@@ -1,0 +1,70 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
+| Date         : Wed Jan 14 19:59:32 2015
+| Host         : D226-4 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file trial1_control_sets_placed.rpt
+| Design       : trial1
+| Device       : xc7z020
+-----------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    17 |
+| Minimum Number of register sites lost to control set restrictions |    24 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              85 |           42 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              83 |           32 |
+| Yes          | No                    | No                     |              28 |            6 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              76 |           21 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|  Clock Signal  |                  Enable Signal                  |                    Set/Reset Signal                    | Slice Load Count | Bel Load Count |
++----------------+-------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|  Clk_IBUF_BUFG | measure/rw/n_0_FSM_onehot_xyz[6]_i_2            | measure/rw/n_0_FSM_onehot_xyz[6]_i_1                   |                2 |              4 |
+|  Clk_IBUF_BUFG |                                                 | measure/I2c/Addresser/n_0_FSM_onehot_state[21]_i_1     |                3 |              5 |
+|  Clk_IBUF_BUFG |                                                 | measure/I2c/Receiver/n_0_FSM_onehot_state[8]_i_1__1    |                3 |              6 |
+|  Clk_IBUF_BUFG |                                                 | measure/I2c/Receiver/n_0_FSM_onehot_state[16]_i_1__0   |                3 |              6 |
+|  Clk_IBUF_BUFG |                                                 | measure/I2c/Addresser/n_0_FSM_onehot_state[9]_i_1      |                3 |              6 |
+|  Clk_IBUF_BUFG |                                                 | measure/I2c/Transmitter/n_0_FSM_onehot_state[8]_i_1__0 |                4 |              6 |
+|  Clk_IBUF_BUFG | measure/I2c/Transmitter/n_0_InternalData[5]_i_1 |                                                        |                2 |              6 |
+|  Clk_IBUF_BUFG | measure/rw/n_0_DATA_OUT[5]_i_1                  |                                                        |                1 |              6 |
+|  Clk_IBUF_BUFG |                                                 | measure/I2c/Receiver/n_0_FSM_onehot_state[25]_i_1      |                2 |              7 |
+|  Clk_IBUF_BUFG |                                                 | measure/I2c/Addresser/n_0_FSM_onehot_state[16]_i_1__1  |                3 |              7 |
+|  Clk_IBUF_BUFG |                                                 | measure/I2c/Transmitter/n_0_FSM_onehot_state[16]_i_1   |                3 |              8 |
+|  Clk_IBUF_BUFG | measure/I2c/Receiver/n_0_Data[7]_i_2            | measure/I2c/Receiver/n_0_Data[7]_i_1                   |                1 |              8 |
+|  Clk_IBUF_BUFG | measure/rw/n_0_X_COMPUTED[15]_i_1               |                                                        |                3 |             16 |
+|  Clk_IBUF_BUFG |                                                 | measure/I2c/ClkGen/n_0_counter[0]_i_1                  |                8 |             32 |
+|  Clk_IBUF_BUFG | measure/I2c/Receiver/n_0_NbRd[31]_i_2           | measure/I2c/Receiver/n_0_NbRd[31]_i_1                  |                9 |             32 |
+|  Clk_IBUF_BUFG | measure/I2c/Transmitter/n_0_NbTrans[31]_i_2     | measure/I2c/Transmitter/n_0_NbTrans[31]_i_1            |                9 |             32 |
+|  Clk_IBUF_BUFG |                                                 |                                                        |               42 |             85 |
++----------------+-------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+
+

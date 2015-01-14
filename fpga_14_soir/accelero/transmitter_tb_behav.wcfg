@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="transmitter_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="transmitter_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="16" />
+   <wvobject db_ref_id="1" fp_name="/transmitter_tb/uut/Clk" type="logic">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/transmitter_tb/uut/BdClk" type="logic">
+      <obj_property name="ElementShortName">BdClk</obj_property>
+      <obj_property name="ObjectShortName">BdClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/transmitter_tb/uut/HalftimeBdClk" type="logic">
+      <obj_property name="ElementShortName">HalftimeBdClk</obj_property>
+      <obj_property name="ObjectShortName">HalftimeBdClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/transmitter_tb/uut/NbToTransmit" type="other">
+      <obj_property name="ElementShortName">NbToTransmit</obj_property>
+      <obj_property name="ObjectShortName">NbToTransmit</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/transmitter_tb/uut/Data" type="array">
+      <obj_property name="ElementShortName">Data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Data[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/transmitter_tb/uut/Transmit" type="logic">
+      <obj_property name="ElementShortName">Transmit</obj_property>
+      <obj_property name="ObjectShortName">Transmit</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/transmitter_tb/uut/SCL" type="logic">
+      <obj_property name="ElementShortName">SCL</obj_property>
+      <obj_property name="ObjectShortName">SCL</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/transmitter_tb/uut/SDA" type="logic">
+      <obj_property name="ElementShortName">SDA</obj_property>
+      <obj_property name="ObjectShortName">SDA</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/transmitter_tb/uut/NbTransmitted" type="other">
+      <obj_property name="ElementShortName">NbTransmitted</obj_property>
+      <obj_property name="ObjectShortName">NbTransmitted</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/transmitter_tb/uut/BdClkEn" type="logic">
+      <obj_property name="ElementShortName">BdClkEn</obj_property>
+      <obj_property name="ObjectShortName">BdClkEn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/transmitter_tb/uut/LoadNextOctetToTransmit" type="logic">
+      <obj_property name="ElementShortName">LoadNextOctetToTransmit</obj_property>
+      <obj_property name="ObjectShortName">LoadNextOctetToTransmit</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/transmitter_tb/uut/DoneTransmitting" type="logic">
+      <obj_property name="ElementShortName">DoneTransmitting</obj_property>
+      <obj_property name="ObjectShortName">DoneTransmitting</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/transmitter_tb/uut/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/transmitter_tb/uut/NbTrans" type="other">
+      <obj_property name="ElementShortName">NbTrans</obj_property>
+      <obj_property name="ObjectShortName">NbTrans</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/transmitter_tb/uut/InternalData" type="array">
+      <obj_property name="ElementShortName">InternalData[7:0]</obj_property>
+      <obj_property name="ObjectShortName">InternalData[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/transmitter_tb/uut/Ack" type="logic">
+      <obj_property name="ElementShortName">Ack</obj_property>
+      <obj_property name="ObjectShortName">Ack</obj_property>
+   </wvobject>
+</wave_config>

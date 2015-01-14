@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=C:/Xilinx/Vivado/2014.2/ids_lite/ISE/bin/nt;C:/Xilinx/Vivado/2014.2/ids_lite/ISE/lib/nt:C:/Xilinx/Vivado/2014.2/bin
+  PATH=C:/Xilinx/SDK/2014.4/bin;C:/Xilinx/Vivado/2014.4/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2014.4/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2014.4/bin
 else
-  PATH=C:/Xilinx/Vivado/2014.2/ids_lite/ISE/bin/nt;C:/Xilinx/Vivado/2014.2/ids_lite/ISE/lib/nt:C:/Xilinx/Vivado/2014.2/bin:$PATH
+  PATH=C:/Xilinx/SDK/2014.4/bin;C:/Xilinx/Vivado/2014.4/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2014.4/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2014.4/bin:$PATH
 fi
 export PATH
 
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log trial1.vds -m32 -mode batch -messageDb vivado.pb -source trial1.tcl
+EAStep vivado -log module_RW.vds -m64 -mode batch -messageDb vivado.pb -source module_RW.tcl

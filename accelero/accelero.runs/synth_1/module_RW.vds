@@ -1,0 +1,487 @@
+#-----------------------------------------------------------
+# Vivado v2014.4 (64-bit)
+# SW Build 1071353 on Tue Nov 18 18:29:27 MST 2014
+# IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+# Start of session at: Tue Jan 13 21:13:12 2015
+# Process ID: 5012
+# Log file: E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.runs/synth_1/module_RW.vds
+# Journal file: E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source module_RW.tcl
+# set_param gui.test TreeTableDev
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7z020clg484-1
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.cache/wt [current_project]
+# set_property parent.project_path E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language VHDL [current_project]
+# set_property board_part em.avnet.com:zed:part0:1.0 [current_project]
+# read_vhdl -library xil_defaultlib E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/sources_1/imports/new/module_RW.vhd
+# read_xdc E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc
+# set_property used_in_implementation false [get_files E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc]
+# catch { write_hwdef -file module_RW.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top module_RW -part xc7z020clg484-1
+Command: synth_design -top module_RW -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-86] Your Synthesis license expires in 0 day(s)
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 238.262 ; gain = 79.938
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'module_RW' [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/sources_1/imports/new/module_RW.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'module_RW' (1#1) [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/sources_1/imports/new/module_RW.vhd:45]
+WARNING: [Synth 8-3917] design module_RW has port ADDR[6] driven by constant 1
+WARNING: [Synth 8-3917] design module_RW has port ADDR[5] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port ADDR[4] driven by constant 1
+WARNING: [Synth 8-3917] design module_RW has port ADDR[3] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port ADDR[2] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port ADDR[1] driven by constant 1
+WARNING: [Synth 8-3917] design module_RW has port ADDR[0] driven by constant 1
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[31] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[30] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[29] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[28] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[27] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[26] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[25] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[24] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[23] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[22] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[21] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[20] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[19] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[18] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[17] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[16] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[15] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[14] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[13] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[12] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[11] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[10] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[9] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[8] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[7] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[6] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[5] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[4] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[3] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[2] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[1] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[0] driven by constant 1
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[31] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[30] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[29] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[28] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[27] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[26] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[25] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[24] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[23] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[22] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[21] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[20] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[19] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[18] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[17] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[16] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[15] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[14] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[13] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[12] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[11] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[10] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[9] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[8] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[7] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[6] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[5] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[4] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[3] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[2] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[1] driven by constant 1
+WARNING: [Synth 8-3917] design module_RW has port NUM_OUT[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 272.496 ; gain = 114.172
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 272.496 ; gain = 114.172
+---------------------------------------------------------------------------------
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/zynq/IOStandards.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc]
+WARNING: [Vivado 12-584] No ports matched 'Clk'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Clk'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[7]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[6]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[5]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[4]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[3]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[2]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[1]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[0]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Scl'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Sda'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[0]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[1]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[2]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[3]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[4]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[5]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[6]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'x[7]'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Scl'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Sda'. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this comm     and returns at least one valid object.
+Finished Parsing XDC File [E:/ECP/Option-OSY/ComposantProgrammable/communication_system_i2c/CommunicationSystemI2C/accelero/accelero.srcs/constrs_1/new/I2C_system.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 593.910 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 593.910 ; gain = 435.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 593.910 ; gain = 435.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 593.910 ; gain = 435.586
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'xyz_reg' in module 'module_RW'
+INFO: [Synth 8-3354] encoded FSM with state register 'xyz_reg' using encoding 'sequential' in module 'module_RW'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:46 . Memory (MB): peak = 593.910 ; gain = 435.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 7     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   6 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   9 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 10    
+	   6 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module module_RW 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 7     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   6 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   9 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 14    
+	   2 Input      1 Bit        Muxes := 10    
+	   6 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 593.910 ; gain = 435.586
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design module_RW has port ADDR[6] driven by constant 1
+WARNING: [Synth 8-3917] design module_RW has port ADDR[5] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port ADDR[4] driven by constant 1
+WARNING: [Synth 8-3917] design module_RW has port ADDR[3] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port ADDR[2] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port ADDR[1] driven by constant 1
+WARNING: [Synth 8-3917] design module_RW has port ADDR[0] driven by constant 1
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[31] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[30] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[29] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[28] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[27] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[26] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[25] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[24] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[23] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[22] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[21] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[20] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[19] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[18] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[17] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[16] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[15] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[14] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[13] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[12] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[11] driven by constant 0
+WARNING: [Synth 8-3917] design module_RW has port NUM_IN[10] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 593.910 ; gain = 435.586
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 593.910 ; gain = 435.586
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 593.910 ; gain = 435.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 593.910 ; gain = 435.586
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 593.910 ; gain = 435.586
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 593.910 ; gain = 435.586
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:01:24 . Memory (MB): peak = 593.910 ; gain = 435.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:24 . Memory (MB): peak = 593.910 ; gain = 435.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:17 ; elapsed = 00:01:25 . Memory (MB): peak = 593.910 ; gain = 435.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:18 ; elapsed = 00:01:26 . Memory (MB): peak = 593.910 ; gain = 435.586
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:18 ; elapsed = 00:01:26 . Memory (MB): peak = 593.910 ; gain = 435.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:18 ; elapsed = 00:01:26 . Memory (MB): peak = 593.910 ; gain = 435.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT2 |     2|
+|3     |LUT3 |     2|
+|4     |LUT4 |     4|
+|5     |LUT5 |     4|
+|6     |LUT6 |    12|
+|7     |FDRE |   112|
+|8     |IBUF |    11|
+|9     |OBUF |   129|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   277|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:18 ; elapsed = 00:01:26 . Memory (MB): peak = 593.910 ; gain = 435.586
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 73 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:01:03 . Memory (MB): peak = 593.910 ; gain = 84.262
+Synthesis Optimization Complete : Time (s): cpu = 00:01:18 ; elapsed = 00:01:26 . Memory (MB): peak = 593.910 ; gain = 435.586
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 122 Warnings, 22 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:24 . Memory (MB): peak = 593.910 ; gain = 409.805
+# write_checkpoint -noxdef module_RW.dcp
+# catch { report_utilization -file module_RW_utilization_synth.rpt -pb module_RW_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.146 . Memory (MB): peak = 593.910 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 13 21:14:43 2015...

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="get_acc_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="get_acc_tb" />
+            <top_module name="state_type_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="30" />
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/Clk" type="logic">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/SDA" type="logic">
+      <obj_property name="ElementShortName">SDA</obj_property>
+      <obj_property name="ObjectShortName">SDA</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/SCL" type="logic">
+      <obj_property name="ElementShortName">SCL</obj_property>
+      <obj_property name="ObjectShortName">SCL</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/x_computed" type="array">
+      <obj_property name="ElementShortName">x_computed[15:0]</obj_property>
+      <obj_property name="ObjectShortName">x_computed[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/y_computed" type="array">
+      <obj_property name="ElementShortName">y_computed[15:0]</obj_property>
+      <obj_property name="ObjectShortName">y_computed[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/z_computed" type="array">
+      <obj_property name="ElementShortName">z_computed[15:0]</obj_property>
+      <obj_property name="ObjectShortName">z_computed[15:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/uut/I2c/Write" type="logic">
+      <obj_property name="ElementShortName">Write</obj_property>
+      <obj_property name="ObjectShortName">Write</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/uut/I2c/DataToTransmit" type="array">
+      <obj_property name="ElementShortName">DataToTransmit[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DataToTransmit[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/uut/I2c/LoadNextOctetToTransmit" type="logic">
+      <obj_property name="ElementShortName">LoadNextOctetToTransmit</obj_property>
+      <obj_property name="ObjectShortName">LoadNextOctetToTransmit</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/uut/I2c/Read" type="logic">
+      <obj_property name="ElementShortName">Read</obj_property>
+      <obj_property name="ObjectShortName">Read</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/uut/I2c/DataReceived" type="array">
+      <obj_property name="ElementShortName">DataReceived[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DataReceived[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/uut/I2c/NextOctetReceivedReady" type="logic">
+      <obj_property name="ElementShortName">NextOctetReceivedReady</obj_property>
+      <obj_property name="ObjectShortName">NextOctetReceivedReady</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/uut/I2c/NbToTransmit" type="other">
+      <obj_property name="ElementShortName">NbToTransmit</obj_property>
+      <obj_property name="ObjectShortName">NbToTransmit</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/uut/I2c/NbTransmitted" type="other">
+      <obj_property name="ElementShortName">NbTransmitted</obj_property>
+      <obj_property name="ObjectShortName">NbTransmitted</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/uut/I2c/NbToReceive" type="other">
+      <obj_property name="ElementShortName">NbToReceive</obj_property>
+      <obj_property name="ObjectShortName">NbToReceive</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/uut/I2c/NbReceived" type="other">
+      <obj_property name="ElementShortName">NbReceived</obj_property>
+      <obj_property name="ObjectShortName">NbReceived</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/uut/I2c/SdaAddresser" type="logic">
+      <obj_property name="ElementShortName">SdaAddresser</obj_property>
+      <obj_property name="ObjectShortName">SdaAddresser</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/uut/I2c/SclAddresser" type="logic">
+      <obj_property name="ElementShortName">SclAddresser</obj_property>
+      <obj_property name="ObjectShortName">SclAddresser</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/uut/I2c/SdaTransmitter" type="logic">
+      <obj_property name="ElementShortName">SdaTransmitter</obj_property>
+      <obj_property name="ObjectShortName">SdaTransmitter</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/uut/I2c/SclTransmitter" type="logic">
+      <obj_property name="ElementShortName">SclTransmitter</obj_property>
+      <obj_property name="ObjectShortName">SclTransmitter</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/uut/I2c/SdaReceiver" type="logic">
+      <obj_property name="ElementShortName">SdaReceiver</obj_property>
+      <obj_property name="ObjectShortName">SdaReceiver</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/uut/I2c/SclReceiver" type="logic">
+      <obj_property name="ElementShortName">SclReceiver</obj_property>
+      <obj_property name="ObjectShortName">SclReceiver</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/uut/I2c/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/uut/rw/currentMode" type="other">
+      <obj_property name="ElementShortName">currentMode</obj_property>
+      <obj_property name="ObjectShortName">currentMode</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/uut/rw/pw" type="other">
+      <obj_property name="ElementShortName">pw</obj_property>
+      <obj_property name="ObjectShortName">pw</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/uut/rw/data_ctl" type="other">
+      <obj_property name="ElementShortName">data_ctl</obj_property>
+      <obj_property name="ObjectShortName">data_ctl</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/uut/rw/dataMode" type="other">
+      <obj_property name="ElementShortName">dataMode</obj_property>
+      <obj_property name="ObjectShortName">dataMode</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/uut/rw/xyz" type="other">
+      <obj_property name="ElementShortName">xyz</obj_property>
+      <obj_property name="ObjectShortName">xyz</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/uut/rw/W" type="logic">
+      <obj_property name="ElementShortName">W</obj_property>
+      <obj_property name="ObjectShortName">W</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/get_acc_tb/uut/rw/R" type="logic">
+      <obj_property name="ElementShortName">R</obj_property>
+      <obj_property name="ObjectShortName">R</obj_property>
+   </wvobject>
+</wave_config>

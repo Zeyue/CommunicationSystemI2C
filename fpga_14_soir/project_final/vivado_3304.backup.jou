@@ -1,0 +1,196 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Tue Jan 13 16:01:15 2015
+# Process ID: 4908
+# Log file: C:/Users/eleve/Desktop/TP LU/project_final/vivado.log
+# Journal file: C:/Users/eleve/Desktop/TP LU/project_final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\Users\eleve\Desktop\TP LU\project_final\project_final.xpr}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/sources_1/new/TOP_VGA_sprites.vhd} w ]
+add_files {{C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/sources_1/new/TOP_VGA_sprites.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+close [ open {C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/sources_1/new/square_clock.vhd} w ]
+add_files {{C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/sources_1/new/square_clock.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+open_run impl_1
+startgroup
+set_property package_pin P16 [get_ports btnr]
+endgroup
+startgroup
+set_property package_pin R16 [get_ports down]
+endgroup
+startgroup
+set_property package_pin AA19 [get_ports hsync]
+endgroup
+startgroup
+set_property package_pin N15 [get_ports left]
+endgroup
+startgroup
+set_property package_pin Y9 [get_ports mclk]
+endgroup
+startgroup
+set_property package_pin R18 [get_ports right]
+endgroup
+startgroup
+set_property package_pin T18 [get_ports up]
+endgroup
+startgroup
+set_property package_pin Y19 [get_ports vsync]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list btnr]]
+set_property iostandard LVCMOS33 [get_ports [list down]]
+set_property iostandard LVCMOS33 [get_ports [list hsync]]
+set_property iostandard LVCMOS33 [get_ports [list left]]
+set_property iostandard LVCMOS33 [get_ports [list mclk]]
+set_property iostandard LVCMOS33 [get_ports [list right]]
+set_property iostandard LVCMOS33 [get_ports [list up]]
+set_property iostandard LVCMOS33 [get_ports [list vsync]]
+startgroup
+set_property package_pin Y21 [get_ports {blue[3]}]
+endgroup
+startgroup
+set_property package_pin Y20 [get_ports {blue[2]}]
+endgroup
+startgroup
+set_property package_pin AB20 [get_ports {blue[1]}]
+endgroup
+startgroup
+set_property package_pin AB19 [get_ports {blue[0]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {blue[3]} {blue[2]} {blue[1]} {blue[0]}]]
+startgroup
+set_property package_pin AB22 [get_ports {green[3]}]
+endgroup
+startgroup
+set_property package_pin AA22 [get_ports {green[2]}]
+endgroup
+startgroup
+set_property package_pin AB21 [get_ports {green[1]}]
+endgroup
+startgroup
+set_property package_pin AA21 [get_ports {green[0]}]
+endgroup
+set_property iostandard LVCMOS33 [get_ports [list {green[3]} {green[2]} {green[1]} {green[0]}]]
+set_property iostandard LVCMOS33 [get_ports [list {red[3]} {red[2]} {red[1]} {red[0]}]]
+startgroup
+set_property package_pin V20 [get_ports {red[3]}]
+endgroup
+startgroup
+set_property package_pin U20 [get_ports {red[2]}]
+endgroup
+startgroup
+set_property package_pin V19 [get_ports {red[1]}]
+endgroup
+startgroup
+set_property package_pin V18 [get_ports {red[0]}]
+endgroup
+file mkdir {C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/constrs_1/new}
+close [ open {C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/constrs_1/new/contraintes.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/constrs_1/new/contraintes.xdc}}
+set_property target_constrs_file {C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/constrs_1/new/contraintes.xdc} [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server -host localhost -port 60001 -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210248452151]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210248452151]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/eleve/Desktop/TP LU/project_final/project_final.runs/impl_1/TOP_VGA_sprites.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {C:/Users/eleve/Desktop/TP LU/project_final/project_final.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {C:/Users/eleve/Desktop/TP LU/project_final/project_final.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {C:/Users/eleve/Desktop/TP LU/project_final/project_final.runs/impl_1/TOP_VGA_sprites.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/eleve/Desktop/TP LU/project_final/project_final.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {C:/Users/eleve/Desktop/TP LU/project_final/project_final.runs/impl_1/TOP_VGA_sprites.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+reset_run synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/eleve/Desktop/TP LU/project_final/project_final.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {C:/Users/eleve/Desktop/TP LU/project_final/project_final.runs/impl_1/TOP_VGA_sprites.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+close [ open {C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/sources_1/new/ClockGenerator.vhd} w ]
+add_files {{C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/sources_1/new/ClockGenerator.vhd}}
+close [ open {C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/sources_1/new/module_RW.vhd} w ]
+add_files {{C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/sources_1/new/module_RW.vhd}}
+close [ open {C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/sources_1/new/MUX.vhd} w ]
+add_files {{C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/sources_1/new/MUX.vhd}}
+close [ open {C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/sources_1/new/Receive.vhd} w ]
+add_files {{C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/sources_1/new/Receive.vhd}}
+close [ open {C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/sources_1/new/get_acc.vhd} w ]
+add_files {{C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/sources_1/new/get_acc.vhd}}
+close [ open {C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/sources_1/new/Transmit.vhd} w ]
+add_files {{C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/sources_1/new/Transmit.vhd}}
+close [ open {C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/sources_1/new/Address.vhd} w ]
+add_files {{C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/sources_1/new/Address.vhd}}
+close [ open {C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/sources_1/new/I2cSystem.vhd} w ]
+add_files {{C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/sources_1/new/I2cSystem.vhd}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/sources_1/new/TOP.vhd} w ]
+add_files {{C:/Users/eleve/Desktop/TP LU/project_final/project_final.srcs/sources_1/new/TOP.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+refresh_design
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+close_design
+synth_design -rtl -name rtl_1

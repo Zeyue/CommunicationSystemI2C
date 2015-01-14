@@ -1,0 +1,680 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Wed Jan 14 19:41:06 2015
+# Process ID: 3256
+# Log file: C:/Users/eleve/Desktop/project_final/project_final.runs/synth_1/TOP.vds
+# Journal file: C:/Users/eleve/Desktop/project_final/project_final.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TOP.tcl
+# set_param gui.test TreeTableDev
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7z020clg484-1
+# set_property target_language Verilog [current_project]
+# set_property board_part em.avnet.com:zed:part0:1.0 [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_property default_lib xil_defaultlib [current_project]
+# read_vhdl -library xil_defaultlib {
+#   C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/imports/new/state_type_pkg.vhd
+#   C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/Transmit.vhd
+#   C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/Receive.vhd
+#   C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/MUX.vhd
+#   C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/ClockGenerator.vhd
+#   C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/Address.vhd
+#   C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/VGA_480640.vhd
+#   C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/square_clock.vhd
+#   C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/pixel_generator.vhd
+#   C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/pixel_clock.vhd
+#   C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/module_RW.vhd
+#   C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/I2cSystem.vhd
+#   C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/TOP_VGA_sprites.vhd
+#   C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/get_acc.vhd
+#   C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/TOP.vhd
+# }
+# read_xdc C:/Users/eleve/Desktop/project_final/project_final.srcs/constrs_1/new/contraintes.xdc
+# set_property used_in_implementation false [get_files C:/Users/eleve/Desktop/project_final/project_final.srcs/constrs_1/new/contraintes.xdc]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Users/eleve/Desktop/project_final/project_final.cache/wt [current_project]
+# set_property parent.project_dir C:/Users/eleve/Desktop/project_final [current_project]
+# catch { write_hwdef -file TOP.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top TOP -part xc7z020clg484-1
+Command: synth_design -top TOP -part xc7z020clg484-1
+
+Starting synthesis...
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 228.492 ; gain = 97.383
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/TOP.vhd:17]
+INFO: [Synth 8-3491] module 'get_acc' declared at 'C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/get_acc.vhd:4' bound to instance 'uut1' of component 'get_acc' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/TOP.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'get_acc' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/get_acc.vhd:14]
+INFO: [Synth 8-3491] module 'I2cSystem' declared at 'C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/I2cSystem.vhd:5' bound to instance 'I2c' of component 'I2cSystem' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/get_acc.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'I2cSystem' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/I2cSystem.vhd:29]
+INFO: [Synth 8-3491] module 'ClockGenerator' declared at 'C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/ClockGenerator.vhd:4' bound to instance 'ClkGen' of component 'ClockGenerator' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/I2cSystem.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'ClockGenerator' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/ClockGenerator.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'ClockGenerator' (1#1) [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/ClockGenerator.vhd:12]
+INFO: [Synth 8-3491] module 'Address' declared at 'C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/Address.vhd:4' bound to instance 'Addresser' of component 'Address' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/I2cSystem.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'Address' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/Address.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'Address' (2#1) [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/Address.vhd:17]
+INFO: [Synth 8-3491] module 'Transmit' declared at 'C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/Transmit.vhd:4' bound to instance 'Transmitter' of component 'Transmit' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/I2cSystem.vhd:157]
+INFO: [Synth 8-638] synthesizing module 'Transmit' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/Transmit.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'Transmit' (3#1) [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/Transmit.vhd:21]
+INFO: [Synth 8-3491] module 'Receive' declared at 'C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/Receive.vhd:4' bound to instance 'Receiver' of component 'Receive' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/I2cSystem.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'Receive' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/Receive.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'Receive' (4#1) [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/Receive.vhd:20]
+INFO: [Synth 8-3491] module 'MUX' declared at 'C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/MUX.vhd:5' bound to instance 'Multiplexer' of component 'MUX' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/I2cSystem.vhd:187]
+INFO: [Synth 8-638] synthesizing module 'MUX' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/MUX.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'MUX' (5#1) [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/MUX.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'I2cSystem' (6#1) [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/I2cSystem.vhd:29]
+INFO: [Synth 8-3491] module 'module_RW' declared at 'C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/module_RW.vhd:29' bound to instance 'rw' of component 'module_RW' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/get_acc.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'module_RW' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/module_RW.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'module_RW' (7#1) [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/module_RW.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'get_acc' (8#1) [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/get_acc.vhd:14]
+INFO: [Synth 8-3491] module 'TOP_VGA_sprites' declared at 'C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/TOP_VGA_sprites.vhd:4' bound to instance 'uut2' of component 'TOP_VGA_sprites' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/TOP.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'TOP_VGA_sprites' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/TOP_VGA_sprites.vhd:17]
+INFO: [Synth 8-3491] module 'pixel_clock' declared at 'C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/pixel_clock.vhd:4' bound to instance 'uut1' of component 'pixel_clock' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/TOP_VGA_sprites.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'pixel_clock' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/pixel_clock.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'pixel_clock' (9#1) [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/pixel_clock.vhd:10]
+INFO: [Synth 8-3491] module 'VGA_640480' declared at 'C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/VGA_480640.vhd:4' bound to instance 'uut2' of component 'VGA_640480' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/TOP_VGA_sprites.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'VGA_640480' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/VGA_480640.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'VGA_640480' (10#1) [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/VGA_480640.vhd:15]
+INFO: [Synth 8-3491] module 'square_clock' declared at 'C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/square_clock.vhd:4' bound to instance 'uut3' of component 'square_clock' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/TOP_VGA_sprites.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'square_clock' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/square_clock.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'square_clock' (11#1) [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/square_clock.vhd:9]
+INFO: [Synth 8-3491] module 'Pixel_generator' declared at 'C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/pixel_generator.vhd:6' bound to instance 'uut4' of component 'Pixel_generator' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/TOP_VGA_sprites.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'Pixel_generator' [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/pixel_generator.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_generator' (12#1) [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/pixel_generator.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'TOP_VGA_sprites' (13#1) [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/TOP_VGA_sprites.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (14#1) [C:/Users/eleve/Desktop/project_final/project_final.srcs/sources_1/new/TOP.vhd:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 262.422 ; gain = 131.313
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+Loading clock regions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/zynq/zynq/xc7z020/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/zynq/zynq/xc7z020/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.2/data/parts/xilinx/zynq/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/zynq/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/zynq/zynq/xc7z020/clg484/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.2/data\./parts/xilinx/zynq/IOStandards.xml
+
+Processing XDC Constraints
+Parsing XDC File [C:/Users/eleve/Desktop/project_final/project_final.srcs/constrs_1/new/contraintes.xdc]
+WARNING: [Vivado 12-584] No ports matched 'down'. [C:/Users/eleve/Desktop/project_final/project_final.srcs/constrs_1/new/contraintes.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/eleve/Desktop/project_final/project_final.srcs/constrs_1/new/contraintes.xdc:2]
+WARNING: [Vivado 12-584] No ports matched 'left'. [C:/Users/eleve/Desktop/project_final/project_final.srcs/constrs_1/new/contraintes.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/eleve/Desktop/project_final/project_final.srcs/constrs_1/new/contraintes.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'mclk'. [C:/Users/eleve/Desktop/project_final/project_final.srcs/constrs_1/new/contraintes.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/eleve/Desktop/project_final/project_final.srcs/constrs_1/new/contraintes.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'right'. [C:/Users/eleve/Desktop/project_final/project_final.srcs/constrs_1/new/contraintes.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/eleve/Desktop/project_final/project_final.srcs/constrs_1/new/contraintes.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'up'. [C:/Users/eleve/Desktop/project_final/project_final.srcs/constrs_1/new/contraintes.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/eleve/Desktop/project_final/project_final.srcs/constrs_1/new/contraintes.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'down'. [C:/Users/eleve/Desktop/project_final/project_final.srcs/constrs_1/new/contraintes.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/eleve/Desktop/project_final/project_final.srcs/constrs_1/new/contraintes.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'left'. [C:/Users/eleve/Desktop/project_final/project_final.srcs/constrs_1/new/contraintes.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/eleve/Desktop/project_final/project_final.srcs/constrs_1/new/contraintes.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'mclk'. [C:/Users/eleve/Desktop/project_final/project_final.srcs/constrs_1/new/contraintes.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/eleve/Desktop/project_final/project_final.srcs/constrs_1/new/contraintes.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'right'. [C:/Users/eleve/Desktop/project_final/project_final.srcs/constrs_1/new/contraintes.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/eleve/Desktop/project_final/project_final.srcs/constrs_1/new/contraintes.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'up'. [C:/Users/eleve/Desktop/project_final/project_final.srcs/constrs_1/new/contraintes.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/eleve/Desktop/project_final/project_final.srcs/constrs_1/new/contraintes.xdc:15]
+Finished Parsing XDC File [C:/Users/eleve/Desktop/project_final/project_final.srcs/constrs_1/new/contraintes.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 491.234 ; gain = 360.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 491.234 ; gain = 360.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 491.234 ; gain = 360.125
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Address'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Transmit'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Receive'
+INFO: [Synth 8-802] inferred FSM for state register 'xyz_reg' in module 'module_RW'
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Address'
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Transmit'
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Receive'
+INFO: [Synth 8-3354] encoded FSM with state register 'xyz_reg' using encoding 'one-hot' in module 'module_RW'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 10    
++---Registers : 
+	               32 Bit    Registers := 8     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 11    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 31    
++---Muxes : 
+	  26 Input     32 Bit        Muxes := 2     
+	  24 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     31 Bit        Muxes := 2     
+	   2 Input     28 Bit        Muxes := 2     
+	  50 Input     26 Bit        Muxes := 1     
+	  47 Input     24 Bit        Muxes := 1     
+	  45 Input     24 Bit        Muxes := 1     
+	  26 Input      8 Bit        Muxes := 3     
+	   4 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	   9 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	  26 Input      5 Bit        Muxes := 1     
+	  24 Input      5 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	  24 Input      1 Bit        Muxes := 23    
+	   4 Input      1 Bit        Muxes := 23    
+	   2 Input      1 Bit        Muxes := 16    
+	   7 Input      1 Bit        Muxes := 6     
+	  26 Input      1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TOP 
+Detailed RTL Component Info : 
+Module ClockGenerator 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 2     
+	   2 Input     28 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module Address 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
++---Muxes : 
+	  45 Input     24 Bit        Muxes := 1     
+	  24 Input      5 Bit        Muxes := 1     
+	  24 Input      1 Bit        Muxes := 9     
+Module Transmit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	  24 Input     32 Bit        Muxes := 1     
+	  47 Input     24 Bit        Muxes := 1     
+	  24 Input      5 Bit        Muxes := 1     
+	  24 Input      1 Bit        Muxes := 14    
+Module Receive 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	  26 Input     32 Bit        Muxes := 2     
+	  50 Input     26 Bit        Muxes := 1     
+	  26 Input      8 Bit        Muxes := 3     
+	  26 Input      5 Bit        Muxes := 1     
+	  26 Input      1 Bit        Muxes := 12    
+Module MUX 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 5     
+Module I2cSystem 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 3     
+Module module_RW 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 7     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	   9 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 15    
+	   2 Input      1 Bit        Muxes := 11    
+Module get_acc 
+Detailed RTL Component Info : 
+Module pixel_clock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module VGA_640480 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module square_clock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Pixel_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+Module TOP_VGA_sprites 
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 491.891 ; gain = 360.781
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 499.008 ; gain = 367.898
+---------------------------------------------------------------------------------
+Finished Parallel Reinfer  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 499.008 ; gain = 367.898
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uut1/rw/internalNumOut_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\uut1/I2c/Addresser/FSM_onehot_state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\uut1/I2c/CurrentAddress_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\uut1/I2c/CurrentAddress_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_6/\uut1/I2c/Receiver/FSM_onehot_state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_3/\uut1/I2c/Transmitter/FSM_onehot_state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_20/\uut2/uut4/square_yt_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_20/\uut2/uut4/square_yt_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_20/\uut2/uut4/square_yt_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_20/\uut2/uut4/square_yt_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_20/\uut2/uut4/square_yt_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_20/\uut2/uut4/square_yt_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_21/\uut2/uut4/square_yb_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_21/\uut2/uut4/square_yb_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (i_21/\uut2/uut4/square_yb_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_21/\uut2/uut4/square_yb_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (\uut1/I2c/Addresser/FSM_onehot_state_reg[0] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/I2c/Transmitter/FSM_onehot_state_reg[0] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/I2c/Receiver/FSM_onehot_state_reg[0] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/I2c/Multiplexer/SdaAddresser_retimed_reg ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/I2c/Multiplexer/SdaReceiver_retimed_reg ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/FSM_onehot_xyz_reg[0] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[0] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[1] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[2] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[3] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[4] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[5] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[6] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[7] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[8] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[9] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[10] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[11] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[12] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[13] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[14] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[15] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[16] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[17] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[18] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[19] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[20] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[21] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[22] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[23] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[24] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[25] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[26] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[27] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[28] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[29] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[30] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yt_reg[31] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[0] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[1] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[2] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[3] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[4] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[5] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[6] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[7] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[8] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[9] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[10] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[11] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[12] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[13] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[14] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[15] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[16] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[17] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[18] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[19] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[20] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[21] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[22] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[23] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[24] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[25] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[26] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[27] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[28] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[29] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[30] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut2/uut4/square_yb_reg[31] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[31] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[30] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[29] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[28] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[27] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[26] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[25] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[24] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[23] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[22] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[21] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[20] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[19] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[18] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[17] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[16] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[15] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[14] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[13] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[12] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[11] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[10] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[9] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[8] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[7] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[6] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[5] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[4] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[3] ) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (\uut1/rw/internalNumOut_reg[2] ) is unused and will be removed from module TOP.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 519.496 ; gain = 388.387
+---------------------------------------------------------------------------------
+Finished Parallel Area Opt  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 519.496 ; gain = 388.387
+Finished Parallel Section  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 519.496 ; gain = 388.387
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 574.547 ; gain = 443.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 574.563 ; gain = 443.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 591.629 ; gain = 460.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 591.629 ; gain = 460.520
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 591.629 ; gain = 460.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 591.629 ; gain = 460.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |   147|
+|3     |INV    |     1|
+|4     |LUT1   |   308|
+|5     |LUT2   |   463|
+|6     |LUT3   |    51|
+|7     |LUT4   |   121|
+|8     |LUT5   |    61|
+|9     |LUT6   |   169|
+|10    |FDCE   |    96|
+|11    |FDPE   |     1|
+|12    |FDRE   |   369|
+|13    |FDSE   |     8|
+|14    |IBUF   |     2|
+|15    |IOBUF  |     1|
+|16    |OBUF   |    15|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------------+----------------+------+
+|      |Instance          |Module          |Cells |
++------+------------------+----------------+------+
+|1     |top               |                |  1816|
+|2     |  uut1            |get_acc         |   914|
+|3     |    I2c           |I2cSystem       |   777|
+|4     |      Addresser   |Address         |   113|
+|5     |      ClkGen      |ClockGenerator  |   180|
+|6     |      Multiplexer |MUX             |    13|
+|7     |      Receiver    |Receive         |   226|
+|8     |      Transmitter |Transmit        |   235|
+|9     |    rw            |module_RW       |   137|
+|10    |  uut2            |TOP_VGA_sprites |   872|
+|11    |    uut1          |pixel_clock     |   112|
+|12    |    uut2          |VGA_640480      |   474|
+|13    |    uut3          |square_clock    |    82|
+|14    |    uut4          |Pixel_generator |   204|
++------+------------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 591.629 ; gain = 460.520
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 140 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 591.629 ; gain = 460.520
+INFO: [Netlist 29-17] Analyzing 150 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  INV => LUT1: 1 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+128 Infos, 110 Warnings, 10 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 591.629 ; gain = 413.105
+# write_checkpoint TOP.dcp
+# report_utilization -file TOP_utilization_synth.rpt -pb TOP_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 591.629 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 14 19:41:43 2015...

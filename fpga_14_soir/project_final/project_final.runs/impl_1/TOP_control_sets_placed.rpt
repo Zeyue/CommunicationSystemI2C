@@ -1,0 +1,76 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.2 (win64) Build 932637 Wed Jun 11 13:33:10 MDT 2014
+| Date         : Wed Jan 14 19:52:13 2015
+| Host         : D226-4 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
+| Design       : TOP
+| Device       : xc7z020
+-----------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    23 |
+| Minimum Number of register sites lost to control set restrictions |    46 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              83 |           44 |
+| No           | No                    | Yes                    |              65 |           14 |
+| No           | Yes                   | No                     |             110 |           42 |
+| Yes          | No                    | No                     |              76 |           25 |
+| Yes          | No                    | Yes                    |              32 |            7 |
+| Yes          | Yes                   | No                     |             108 |           28 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------+---------------------------------------------------+------------------------------------------------------+------------------+----------------+
+|    Clock Signal    |                   Enable Signal                   |                   Set/Reset Signal                   | Slice Load Count | Bel Load Count |
++--------------------+---------------------------------------------------+------------------------------------------------------+------------------+----------------+
+|  clk25_BUFG        |                                                   |                                                      |                1 |              1 |
+|  Horloge_IBUF_BUFG |                                                   | uut1/I2c/Addresser/n_0_FSM_onehot_state[21]_i_1      |                3 |              4 |
+|  Horloge_IBUF_BUFG | uut1/rw/n_0_FSM_onehot_xyz[6]_i_2                 | uut1/rw/n_0_FSM_onehot_xyz[6]_i_1                    |                1 |              4 |
+|  Horloge_IBUF_BUFG |                                                   | uut1/I2c/Receiver/n_0_FSM_onehot_state[8]_i_1__0     |                4 |              6 |
+|  Horloge_IBUF_BUFG |                                                   | uut1/I2c/Transmitter/n_0_FSM_onehot_state[8]_i_1__1  |                3 |              6 |
+|  Horloge_IBUF_BUFG | uut1/I2c/Transmitter/n_0_InternalData[5]_i_1      |                                                      |                2 |              6 |
+|  Horloge_IBUF_BUFG | uut1/rw/n_0_DATA_OUT[5]_i_1                       |                                                      |                2 |              6 |
+|  Horloge_IBUF_BUFG |                                                   | uut1/I2c/Receiver/n_0_FSM_onehot_state[25]_i_1       |                3 |              7 |
+|  Horloge_IBUF_BUFG |                                                   | uut1/I2c/Receiver/n_0_FSM_onehot_state[16]_i_1__0    |                4 |              7 |
+|  Horloge_IBUF_BUFG |                                                   | uut1/I2c/Addresser/n_0_FSM_onehot_state[16]_i_1      |                5 |              8 |
+|  Horloge_IBUF_BUFG | uut1/I2c/Receiver/n_0_Data[7]_i_2                 | uut1/I2c/Receiver/n_0_Data[7]_i_1                    |                2 |              8 |
+|  Horloge_IBUF_BUFG | uut1/rw/n_0_internalX0[7]_i_1                     |                                                      |                4 |              8 |
+|  Horloge_IBUF_BUFG |                                                   | uut1/I2c/Transmitter/n_0_FSM_onehot_state[17]_i_1__0 |                4 |              9 |
+|  Horloge_IBUF_BUFG | uut1/rw/n_0_X_COMPUTED[15]_i_1                    |                                                      |                9 |             24 |
+|  Horloge_IBUF_BUFG |                                                   | uut2/uut3/square_clk_bis                             |                8 |             31 |
+|  Horloge_IBUF_BUFG |                                                   | uut1/I2c/ClkGen/n_0_counter[0]_i_1                   |                8 |             32 |
+|  Horloge_IBUF_BUFG | uut1/I2c/Receiver/n_0_NbRd[31]_i_2                | uut1/I2c/Receiver/n_0_NbRd[31]_i_1                   |                9 |             32 |
+|  Horloge_IBUF_BUFG | uut1/I2c/Transmitter/n_0_FSM_onehot_state_reg[20] |                                                      |                8 |             32 |
+|  clk25_BUFG        |                                                   | btnr_IBUF                                            |                6 |             32 |
+|  clk25_BUFG        | uut2/uut2/activate_v                              | btnr_IBUF                                            |                7 |             32 |
+|  Horloge_IBUF_BUFG |                                                   | btnr_IBUF                                            |                8 |             33 |
+|  clk_BUFG          | uut1/rw/O11                                       | btnr_IBUF                                            |               16 |             64 |
+|  Horloge_IBUF_BUFG |                                                   |                                                      |               43 |             82 |
++--------------------+---------------------------------------------------+------------------------------------------------------+------------------+----------------+
+
+

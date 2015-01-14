@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Wed Jan 14 18:54:59 2015
+# Process ID: 5088
+# Log file: F:/accelero/vivado.log
+# Journal file: F:/accelero\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:\accelero\accelero.xpr}
+update_compile_order -fileset sim_1
+launch_xsim -simset sim_1 -mode behavioral
+close_sim

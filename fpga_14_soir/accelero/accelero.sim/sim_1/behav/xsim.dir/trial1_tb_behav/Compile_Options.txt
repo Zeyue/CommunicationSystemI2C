@@ -1,0 +1,1 @@
+--debug "typical" --relax -L "xil_defaultlib" -L "secureip" --snapshot "trial1_tb_behav" --prj "C:/Users/eleve/Desktop/accelero/accelero.sim/sim_1/behav/trial1_tb.prj" "xil_defaultlib.trial1_tb" 

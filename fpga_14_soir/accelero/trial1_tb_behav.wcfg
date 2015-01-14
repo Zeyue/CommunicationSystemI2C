@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="trial1_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="state_type_pkg" />
+            <top_module name="trial1_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="38" />
+   <wave_markers>
+      <marker time="2147483647" label="" />
+      <marker time="2147483647" label="" />
+      <marker time="2147483647" label="" />
+      <marker time="2147483647" label="" />
+      <marker time="280715000000" label="" />
+   </wave_markers>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/Clk" type="logic">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/SlaveAddress" type="array">
+      <obj_property name="ElementShortName">SlaveAddress[7:1]</obj_property>
+      <obj_property name="ObjectShortName">SlaveAddress[7:1]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/Write" type="logic">
+      <obj_property name="ElementShortName">Write</obj_property>
+      <obj_property name="ObjectShortName">Write</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/DataToTransmit" type="array">
+      <obj_property name="ElementShortName">DataToTransmit[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DataToTransmit[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/LoadNextOctetToTransmit" type="logic">
+      <obj_property name="ElementShortName">LoadNextOctetToTransmit</obj_property>
+      <obj_property name="ObjectShortName">LoadNextOctetToTransmit</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/Read" type="logic">
+      <obj_property name="ElementShortName">Read</obj_property>
+      <obj_property name="ObjectShortName">Read</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/DataReceived" type="array">
+      <obj_property name="ElementShortName">DataReceived[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DataReceived[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/NextOctetReceivedReady" type="logic">
+      <obj_property name="ElementShortName">NextOctetReceivedReady</obj_property>
+      <obj_property name="ObjectShortName">NextOctetReceivedReady</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/NbToTransmit" type="other">
+      <obj_property name="ElementShortName">NbToTransmit</obj_property>
+      <obj_property name="ObjectShortName">NbToTransmit</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/NbTransmitted" type="other">
+      <obj_property name="ElementShortName">NbTransmitted</obj_property>
+      <obj_property name="ObjectShortName">NbTransmitted</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/NbToReceive" type="other">
+      <obj_property name="ElementShortName">NbToReceive</obj_property>
+      <obj_property name="ObjectShortName">NbToReceive</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/NbReceived" type="other">
+      <obj_property name="ElementShortName">NbReceived</obj_property>
+      <obj_property name="ObjectShortName">NbReceived</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/Scl" type="logic">
+      <obj_property name="ElementShortName">Scl</obj_property>
+      <obj_property name="ObjectShortName">Scl</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/Sda" type="logic">
+      <obj_property name="ElementShortName">Sda</obj_property>
+      <obj_property name="ObjectShortName">Sda</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/BdClkEn" type="logic">
+      <obj_property name="ElementShortName">BdClkEn</obj_property>
+      <obj_property name="ObjectShortName">BdClkEn</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/BdClk" type="logic">
+      <obj_property name="ElementShortName">BdClk</obj_property>
+      <obj_property name="ObjectShortName">BdClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/HalftimeBdClk" type="logic">
+      <obj_property name="ElementShortName">HalftimeBdClk</obj_property>
+      <obj_property name="ObjectShortName">HalftimeBdClk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/AddressSent" type="logic">
+      <obj_property name="ElementShortName">AddressSent</obj_property>
+      <obj_property name="ObjectShortName">AddressSent</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/DoneTransmitting" type="logic">
+      <obj_property name="ElementShortName">DoneTransmitting</obj_property>
+      <obj_property name="ObjectShortName">DoneTransmitting</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/DoneReceiving" type="logic">
+      <obj_property name="ElementShortName">DoneReceiving</obj_property>
+      <obj_property name="ObjectShortName">DoneReceiving</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/GoTransmit" type="logic">
+      <obj_property name="ElementShortName">GoTransmit</obj_property>
+      <obj_property name="ObjectShortName">GoTransmit</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/GoReceive" type="logic">
+      <obj_property name="ElementShortName">GoReceive</obj_property>
+      <obj_property name="ObjectShortName">GoReceive</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/GoAddress" type="logic">
+      <obj_property name="ElementShortName">GoAddress</obj_property>
+      <obj_property name="ObjectShortName">GoAddress</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/BdClkEnAddresser" type="logic">
+      <obj_property name="ElementShortName">BdClkEnAddresser</obj_property>
+      <obj_property name="ObjectShortName">BdClkEnAddresser</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/BdClkEnTransmitter" type="logic">
+      <obj_property name="ElementShortName">BdClkEnTransmitter</obj_property>
+      <obj_property name="ObjectShortName">BdClkEnTransmitter</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/BdClkEnReceiver" type="logic">
+      <obj_property name="ElementShortName">BdClkEnReceiver</obj_property>
+      <obj_property name="ObjectShortName">BdClkEnReceiver</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/SdaAddresser" type="logic">
+      <obj_property name="ElementShortName">SdaAddresser</obj_property>
+      <obj_property name="ObjectShortName">SdaAddresser</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/SclAddresser" type="logic">
+      <obj_property name="ElementShortName">SclAddresser</obj_property>
+      <obj_property name="ObjectShortName">SclAddresser</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/SdaTransmitter" type="logic">
+      <obj_property name="ElementShortName">SdaTransmitter</obj_property>
+      <obj_property name="ObjectShortName">SdaTransmitter</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/SclTransmitter" type="logic">
+      <obj_property name="ElementShortName">SclTransmitter</obj_property>
+      <obj_property name="ObjectShortName">SclTransmitter</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/SdaReceiver" type="logic">
+      <obj_property name="ElementShortName">SdaReceiver</obj_property>
+      <obj_property name="ObjectShortName">SdaReceiver</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/SclReceiver" type="logic">
+      <obj_property name="ElementShortName">SclReceiver</obj_property>
+      <obj_property name="ObjectShortName">SclReceiver</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/CurrentAddress" type="array">
+      <obj_property name="ElementShortName">CurrentAddress[7:0]</obj_property>
+      <obj_property name="ObjectShortName">CurrentAddress[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/RWAddresser" type="logic">
+      <obj_property name="ElementShortName">RWAddresser</obj_property>
+      <obj_property name="ObjectShortName">RWAddresser</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/RWTransmitter" type="logic">
+      <obj_property name="ElementShortName">RWTransmitter</obj_property>
+      <obj_property name="ObjectShortName">RWTransmitter</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/RWReceiver" type="logic">
+      <obj_property name="ElementShortName">RWReceiver</obj_property>
+      <obj_property name="ObjectShortName">RWReceiver</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/trial1_tb/uut/measure/I2c/BaudRate" type="other">
+      <obj_property name="ElementShortName">BaudRate</obj_property>
+      <obj_property name="ObjectShortName">BaudRate</obj_property>
+   </wvobject>
+</wave_config>
